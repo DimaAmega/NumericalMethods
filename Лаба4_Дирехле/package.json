@@ -1,0 +1,17 @@
+{
+  "name": "node-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^2.1.1",
+    "express": "^4.16.4",
+    "readline-sync": "^1.4.9",
+    "sylvester-es6": "0.0.2"
+  }
+}

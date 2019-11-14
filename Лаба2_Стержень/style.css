@@ -1,0 +1,88 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+.ct-series-a .ct-point {
+  stroke: red;
+  stroke-width: 4px;
+}
+
+.ct-series-a .ct-line {
+  stroke: blue;
+}
+/* Используйте этот селектор для переопределения стиля линейного графика */
+ .ct-series-b .ct-point,.ct-series-c .ct-point,.ct-series-d .ct-point,.ct-series-e .ct-point,.ct-series-f .ct-point {
+  stroke: #3B9B3E;
+  stroke-width: 4px;
+}
+.ct-series-b .ct-line, .ct-series-c .ct-line, .ct-series-d .ct-line, .ct-series-e .ct-line, .ct-series-f .ct-line {
+  stroke: #68D96D;
+}
+/* Используйте этот селектор для переопределения стиля линейного графика */
+
+.grids {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "g1 g1 g1 m"
+    "g2 g2 g2 ."
+    "t t t t";
+    grid-gap: 10px;
+}
+#graph1 {
+  box-shadow: 3px 3px 20px black;
+  padding-left: 15px;
+  grid-area: g1;
+}
+#graph2 {
+  box-shadow: 3px 3px 20px black;
+  padding-left: 15px;
+  grid-area: g2;
+}
+.menu {
+  box-shadow: 3px 3px 20px black;
+  border-radius: 5px;
+  grid-area: m;
+}
+.table {
+  text-align: center;
+  grid-area: t;
+}
+
+.ct-zoom-rect {
+  fill: rgba(0, 200, 100, 0.3);
+  stroke: red;
+}
+
+
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+   td, th {
+    padding: 1px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+   }
+
+   #set_options input {
+    width: 97%;
+   }
+   #olp   {
+    font-size: 40px;
+   }
+   #start {
+    transition: all 0.4s 0.1s;
+   }
+#start:hover{
+  background: black;
+  color:white;
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  background: rgb(6, 51, 148);
+  /* color:rgb(104, 10, 10); */
+}
+div {
+  height: 20px;
+}
+
+svg{
+  overflow: visible;
+}
+
+#gr1, #gr2 ,#gr3 ,#gr4 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  margin: 80px 0 100px 200px;
+  width: 470px;
+  height: 400px;
+}
+
+#menu {
+  position: absolute;
+  top:10px;
+  right: 0px;
+  width: 200px;
+  font-size: 30px;
+}
+.graphic p {
+  position: relative;
+}
+
+.line {
+  fill: none;
+  stroke: hsl(234, 100%, 50%);
+}
+
+.l {
+  stroke-width: 0.6;
+}
+
+.nl{
+  stroke-width: 0;
+  fill: none;
+}
+
+button:hover{
+  color:white;
+  background: black;
+}
+
+
+/* Style the dots by assigning a fill and stroke */
+.dotstyle {
+  fill: #6200ff;
+  r:3;
+}
+
+.x-axis g text {
+  font-size: 20px;
+}
+.y-axis g text {
+  font-size: 20px;
+}
+
+.dot2 {
+  fill: #7bff00;
+  r:4
+}
+
+.dot1 {
+  fill: #ff00ff;
+  r:3;
+}
+
+
+.dot0 {
+  fill: #00d9ff;
+  r:1;
+}
+
+.lSol {
+  stroke: #10b0cc;
+  stroke-width: 0.6;
+}
+table {
+  font-size: 15px;
+  margin-top: 100px;
+  text-align: center;
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+td, th {
+padding: 10px; /* Поля вокруг содержимого таблицы */
+border: 1px solid black; /* Параметры рамки */
+
+}

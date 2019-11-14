@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laba3</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="gr1" class="graphic"></div>
+    <div id="gr2" class="graphic"></div>
+    <div id="gr3" class="graphic"></div>
+    <div id="gr4" class="graphic"></div>
+
+
+    <div id="menu">
+        <form id="N">
+            <br>
+            <p>Число разбиений<input name="task" type="text" value=""></p>
+        </form> 
+    <form id="set_task">
+    <p><b>Выберите задачу</b></p>
+    <p><input name="task" type="radio" value="test">Тестовая</p>
+    <p><input name="task" type="radio" value="main1">Основная 1</p>
+    <p><input name="task" type="radio" value="main2">Основная 2</p>
+    </form> 
+    <form id="set_options">
+      <p><b>Выберите  тип граничных условий</b></p>
+      <p><input name="type" type="radio" value="naturals">Естественные</p>
+      <p><input name="type" type="radio" value="accurate">Точные</p>
+    </form>
+    <button id="start">Поехали!</button> 
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="js/Graph.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/Math_tools.js"></script>
+    <script src="js/different_tools.js"></script>
+    <script src="js/Mytask.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/EventsListener.js"></script>
+</body>
+</html>

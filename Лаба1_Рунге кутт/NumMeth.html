@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NUMERIC METODS</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+      <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+  <div class="grids">
+    <div class="ct-chart" id="graph"></div>
+    <div class="menu">
+      <p>Назад<button id="back">BACK</button></p>
+  <form id="set_mode">
+    <p><b>Выберите тип метода</b></p>
+    <p><input name="dzen" type="radio" value="KLP">Контроль Локальной погрешности</p>
+    <p><input name="dzen" type="radio" value="SS">Постоянный шаг</p>
+  </form> 
+   <form id="set_task">
+    <p><b>Выберите задачу</b></p>
+    <p><input name="dzen" type="radio" value="test">Тестовая</p>
+    <p><input name="dzen" type="radio" value="main1">Основная 1</p>
+    <p><input name="dzen" type="radio" value="main2">Основная 2</p>
+  </form> 
+  <form id="set_options">
+    <p><b>Выберите настройки метода</b></p>
+    <p>Введите \(X_0\)<input name="t0" type="text" value="0"></p>
+    <p>Введите \(U_0\)<input name="u0" type="text" value="1,1"></p>
+    <p>Введите \(h\)<input name="h" type="text" value="0.01"></p>
+    <p>Введите \(X_{end}\)<input name="t_end" type="text" value="9"></p>
+    <p>Введите максимальное число итераций \(N_{max}\)<input name="n_max" type="text" value="1000"></p>
+    <p>Введите точность котроля \(EPS\)<input name="eps" type="text" value="0.001"></p>
+    <p>Обновлять график<input type="checkbox" name="isRefresh"></p>
+  </form>
+  <button id="start">Поехали!</button> 
+    </div>
+    <div class="table">
+
+    </div>
+  </div>
+  <div id="wrap"></div>
+<script type="text/javascript" src="axisTitlePlugins.js"></script>
+<script type="text/javascript" src="cloneObject.js"></script>
+<script type="text/javascript" src="zoomPlugin.js"></script>
+<script type="text/javascript" src="Chartist_options.js"></script>
+<script type="text/javascript" src="Vec2.js"></script>
+<script type="text/javascript" src="RK.js"></script>
+<script type="text/javascript" src="Functions_API.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="EsentsListeners.js"></script>
+</body>
+</html>
+
+
+
+
